@@ -20,7 +20,7 @@ public class TraceThreadPoolExecutor extends ThreadPoolExecutor {
     }
 
     private Exception clientTrace() {
-        return new Exception("Client stack trace");
+        return new Exception("Client thread stack trace");
     }
 
     private Runnable wrap(final Runnable task, final Exception clientStack, String clientThreadName) {
